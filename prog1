@@ -1,0 +1,15 @@
+#include <stdarg.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <cmocka.h>
+
+float desconto(float valor_compra, float desconto)
+
+// Implementação do teste para a função 
+static void test_desconto(void **state) {
+    (void) state; // evita warnings de variável não usada
+    assert_int_equal(soma(2, 3), 5);
+    assert_int_equal(soma(-1, 1), 0);
+    assert_int_equal(soma(0, 0), 0);
+    assert_int_equal(soma(-5, -3), -8);
+}
